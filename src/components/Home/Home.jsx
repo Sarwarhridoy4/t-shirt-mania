@@ -24,6 +24,7 @@ const Home = () => {
   const handelRemoveFromCart = (tshirt) => {
     const remaining = cart.filter((ts) => ts._id !== tshirt._id);
     setCart(remaining);
+    alert("Product Removed!");
   };
   return (
     <div className='home-container'>
